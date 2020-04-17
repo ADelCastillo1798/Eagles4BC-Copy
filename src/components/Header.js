@@ -5,9 +5,11 @@ import css from './Header.module.css'
 function Header() {
     return (
         <header className={css.header}>
-            <div classname={css.logo}>
+            <div></div>
+            <div className={css.logo}>
                 <img src={publicUrl('/assets/logo.png')} alt="logo"/>
             </div>
+            <div></div>
         </header>
     )
 }
