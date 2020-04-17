@@ -1,21 +1,30 @@
 import React from 'react';
 import css from './Navbar.module.css';
 import publicUrl from 'utils/publicUrl';
+import  {Link} from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className={css.navbar}>
             <div className={css.navItem}>
-                "needs"
+                <Link to='/'>
+                    🏠
+                </Link>
             </div>
             <div className={css.navItem}>
-                "offers"
+                <Link to='/responses'>
+                    📩
+                </Link>
             </div>
             <div className={css.navItem}>
-                "responses"
+                <Link to='/createNew'>
+                    ➕
+                </Link>
             </div>
             <div className={css.navItem}>
-                "profile"
+                <Link to='/profile'>
+                    😊
+                </Link>
             </div>
         </nav>
     )
