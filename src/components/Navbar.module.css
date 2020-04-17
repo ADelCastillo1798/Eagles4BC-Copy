@@ -17,5 +17,7 @@
 }
 .navItem{
     font-size: 30px;
+}
+.navItem span {
     text-decoration: none;
 }
