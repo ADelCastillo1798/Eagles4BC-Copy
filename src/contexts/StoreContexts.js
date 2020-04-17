@@ -4,8 +4,8 @@ import initStore from 'utils/initStore'
 
 export const StoreContext = createContext();
 
-function StoreContextProvider() {
-    const store = initStore();
+function StoreContextProvider(props) {
+    const store = initStore;
 
     //inserts all the needed functions in here: addLike, removeLike, addPost etc.
 
@@ -16,3 +16,4 @@ function StoreContextProvider() {
     )
 }
 
+export default StoreContextProvider;
