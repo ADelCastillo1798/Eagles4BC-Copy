@@ -5,14 +5,14 @@ import Navbar from 'components/Navbar';
 import Responses from 'components/Responses';
 import NewPost from 'components/NewPost';
 import Profile from 'components/Profile';
-import Post from 'components/Post'
+import Post from 'components/Post';
+import Home from 'components/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 import ContextStoreProvider from 'contexts/StoreContexts'
-
 
 function App() {
   return (
@@ -33,6 +33,9 @@ function App() {
               </Route>
               <Route path='/:postId?'>
                 <Post />
+              </Route>
+              <Route path='/'>
+                <Home />
               </Route>
             </Switch>
           </main>
