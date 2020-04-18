@@ -1,0 +1,12 @@
+.post{
+    border-radius: 25px;
+    border: 2px solid #840315;
+    padding: 20px;
+    width: auto;
+    height: 100px;
+    margin: 5px;
+}
+.title{
+    font-size: large;
+    font-weight: 600;
+}

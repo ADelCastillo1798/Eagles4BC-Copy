@@ -1,0 +1,30 @@
+.post{
+    border-radius: 25px;
+    border: 2px solid #840315;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+.post:last-child{
+    margin-bottom: 60px;
+}
+.title{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.desc{
+    padding: 8px;
+    border: 2px solid gold;
+    border-radius: 25px
+}
+.tags span{
+    margin: 5px;
+    display: inline-block;
+    background-color: gold;
+    border-radius: 15px;
+    padding: 4px;
+}
