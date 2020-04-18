@@ -21,9 +21,16 @@ function Profile(){
 
 
   return(
-    <header className={css.header}>
-
-    </header>
+    <div>
+      <header className={css.header}>
+        <div className={css.photo}>
+          <img src={publicUrl(user.photo)} alt="Profile" />
+        </div>
+      </header>
+      <div className={css.name}>
+          <span> {user.name} </span>
+      </div>
+    </div>
   );
 }
 
