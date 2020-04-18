@@ -29,7 +29,10 @@ function Profile(){
         </div>
         <div className={css.name}>
           <span> {user.name} </span>
-      </div>
+        </div>
+        <div className={css.bio}>
+          <span>{user.bio}</span>
+        </div>
       </header>
       <div className={css.posts}>
         {userPosts.map( post =>

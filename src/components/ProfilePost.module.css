@@ -8,6 +8,9 @@
     height: auto;
     margin: 5px;
 }
+.post:last-child{
+    margin-bottom: 60px;
+}
 .title{
     font-size: large;
     font-weight: 600;

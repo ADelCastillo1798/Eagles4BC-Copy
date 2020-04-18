@@ -5,13 +5,15 @@ export default {
             id: "baldwin",
             email: "baldwin@bc.edu",
             photo: "/assets/user1.png",
-            name: "Baldwin the Eagle"
+            name: "Baldwin the Eagle",
+            bio: "Flying high on being able to help out my fellow Eags🦅"
         },
         {
             id: "iggy",
             email: "iggy@bc.edu",
             photo: "/assets/user2.png",
-            name: "St. Iggy"
+            name: "St. Iggy",
+            bio: "Trying my best to be a role model person for and with others🙏🏼"
         },
         {
             id: "adam",
