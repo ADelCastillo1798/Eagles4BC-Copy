@@ -3,6 +3,7 @@ import publicUrl from 'utils/publicUrl'
 import { StoreContext } from 'contexts/StoreContexts';
 import { Link, useParams } from 'react-router-dom';
 import css from 'components/Profile.module.css';
+import ProfilePost from 'components/ProfilePost';
 
 function Profile(){
 
@@ -26,9 +27,14 @@ function Profile(){
         <div className={css.photo}>
           <img src={publicUrl(user.photo)} alt="Profile" />
         </div>
-      </header>
-      <div className={css.name}>
+        <div className={css.name}>
           <span> {user.name} </span>
+      </div>
+      </header>
+      <div className={css.posts}>
+        {userPosts.map( post =>
+          <ProfilePost post={post}/>
+        )}
       </div>
     </div>
   );
