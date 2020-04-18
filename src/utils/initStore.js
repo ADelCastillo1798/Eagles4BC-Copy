@@ -5,7 +5,7 @@ export default {
             id: "baldwin",
             email: "baldwin@bc.edu",
             photo: "/assets/user1.png",
-            name: "Baldwin Eagle"
+            name: "Baldwin the Eagle"
         },
         {
             id: "iggy",
