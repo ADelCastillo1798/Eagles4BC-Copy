@@ -18,8 +18,20 @@ export default {
         {
             id: "adam",
             email: "delcasad@bc.edu",
-            photo: "/assets/user2.png",
+            photo: "/assets/user23.png",
             name: "Adam Del Castillo"
+        },
+        {
+            id: "tommy",
+            email: "suhtommy@bc.edu",
+            photo: "/assets/user4.png",
+            name: "Tommy Suh"
+        },
+        {
+            id: "esther",
+            email: "leeesther@bc.edu",
+            photo: "/assets/user5.png",
+            name: "Esther Lee"
         }
     ],
     posts: [
@@ -61,6 +73,16 @@ export default {
             title: "Food and Support if you need it!",
             desc: "I've got a place off campus and am here for anyone that needs help. I'm a decent cook so I can whipe up a little something and am open to talk and provide support in this stressful time!",
             tags: ["Food", "Mental Helath Support", "Off-Campus"],
+            datetime: ""
+        },
+        {
+            id: "post-5",
+            userId: "baldwin",
+            userPhoto: "/assets/user1.png",
+            type: "offer",
+            title: "Meal Swipes at Lower",
+            desc: "My meal plan still have $500 left on, and I'd hate for it to go to waste! Willing to swipe for anyone's dinner from Tuesday to Thursday if you give me a heads up as a response to this post! Don't be shy!",
+            tags: ["Food", "Lower"],
             datetime: ""
         },
     ],

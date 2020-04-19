@@ -28,11 +28,8 @@ function App() {
               <Route path='/createNew'>
                 <NewPost />
               </Route>
-              <Route path='/profile:userID?'>
+              <Route path='/profile/:userId?'>
                 <Profile />
-              </Route>
-              <Route path='/:postId?'>
-                <Post />
               </Route>
               <Route path='/'>
                 <Home />
