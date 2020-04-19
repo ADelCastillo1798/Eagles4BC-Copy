@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import publicUrl from 'utils/publicUrl'
 import { StoreContext } from 'contexts/StoreContexts';
 import { Link, useParams } from 'react-router-dom';
@@ -8,18 +8,16 @@ import ProfilePost from 'components/ProfilePost';
 function Profile(){
 
   const store = useContext(StoreContext)
-  console.log(store)
-
+  
   let {userId} = useParams();
   if (!userId){
     userId = store.currentUserId;
   }
 
-  let user = store.users.find(u => u.id === userId);
-  console.log(user)
-  let userPosts = store.posts.filter(p => p.userId === userId);
-  console.log(userPosts)
+  const [filter, setFilter] = useState('need');
 
+  let user = store.users.find(u => u.id === userId);
+  let userPosts = store.posts.filter(p => p.userId === userId);
 
   return(
     <div>
@@ -34,10 +32,13 @@ function Profile(){
           <span>{user.bio}</span>
         </div>
       </header>
+      <div className={css.filters}>
+        <button onClick={()=> setFilter('need')} >Needs</button>
+        <button onClick={()=> setFilter('offer')}>Offers</button>
+      </div>
       <div className={css.posts}>
-        {userPosts.map( post =>
-          <ProfilePost post={post}/>
-        )}
+        {userPosts.filter(p => p.type === filter).map(post =>
+          <ProfilePost key={post.id} post={post}/>)}
       </div>
     </div>
   );

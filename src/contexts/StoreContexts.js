@@ -1,11 +1,11 @@
-import React, { createContext } from 'react';
+import React, { createContext , useState} from 'react';
 import initStore from 'utils/initStore'
 
 
 export const StoreContext = createContext();
 
 function StoreContextProvider(props) {
-    const store = initStore;
+    const [store, setStore] = useState(()=>{return initStore});
 
     //inserts all the needed functions in here: addLike, removeLike, addPost etc.
 

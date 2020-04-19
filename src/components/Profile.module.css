@@ -3,22 +3,36 @@
     position: relative;
     padding: 16px;
     padding-top: 50px;
+    padding-bottom: 0px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.photo > img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid #840315;
+}
+.name{
+    font-size: 25px;
 }
 .bio{
     width: 200px;
     text-align: center;
     margin: 3px;
 }
-.photo img {
-    object-fit: cover;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
-.name{
-    font-weight: 600;
-    font-size: x-large;
+.filters > button{
+    border: 1px solid;
+    border-radius: 5px;
+    height: auto;
+    font-size: medium;
+    margin: auto;
 }
