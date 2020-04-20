@@ -35,7 +35,7 @@ function Post(props){
             <div className={css.respondButton}>
                 {props.post.userId != currentUserId ? 
                     <div>
-                        <Link to={`/responses/${props.post.userId}`}>
+                        <Link to={`/responses/${props.post.id}`}>
                                 <button>
                                     Respond
                                 </button>
