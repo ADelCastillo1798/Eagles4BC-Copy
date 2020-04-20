@@ -39,3 +39,8 @@
     border-radius: 15px;
     padding: 4px;
 }
+.time{
+    align-self: flex-end;
+    font-size: .1em;
+    color: #840315;
+}

@@ -19,7 +19,9 @@ function Home(){
                 <button onClick={()=> setFilter('offer')}>Offers</button>
             </div>
             <div className={css.posts}>
-                {allPosts.filter(p => p.type === filter).map(post =>
+                {allPosts.sort((a,b)=>new Date(b.datetime) - new Date(a.datetime))
+                .filter(p => p.type === filter)
+                .map(post =>
                 <Post key={post.id} post={post}/>)}
             </div>
         </div>

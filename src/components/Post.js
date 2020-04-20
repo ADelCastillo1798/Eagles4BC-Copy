@@ -2,6 +2,7 @@ import React from 'react';
 import css from 'components/Post.module.css';
 import publicUrl from 'utils/publicUrl';
 import { Link } from 'react-router-dom';
+import timespan from 'utils/timespan.js';
 
 function Post(props){
     return (
@@ -29,6 +30,9 @@ function Post(props){
                     )}
                 </section>
             </div>
+            <time className={css.time}>
+                {timespan(props.post.datetime).toUpperCase()} AGO
+            </time>
         </article>
     );
 }

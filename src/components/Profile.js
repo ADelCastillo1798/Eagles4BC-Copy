@@ -17,7 +17,7 @@ function Profile(){
   const [filter, setFilter] = useState('need');
 
   let user = store.users.find(u => u.id === userId);
-  let userPosts = store.posts.filter(p => p.userId === userId);
+  let userPosts = store.posts.sort((a,b)=>new Date(b.datetime) - new Date(a.datetime)).filter(p => p.userId === userId);
 
   return(
     <div>

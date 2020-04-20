@@ -44,7 +44,7 @@ export default {
             title: "Storage for 5 Large Boxes",
             desc: "Hello! I live close by in Newton and I can store 5 large boxes over the summer! I can pick up from anywhere on lower campus until Friday!",
             tags: ["Storage", "Lower"],
-            datetime: ""
+            datetime: "2020-02-06T22:45:28Z"
         },
         {
             id: "post-2",
@@ -54,7 +54,7 @@ export default {
             title: "Ride Share to Airport",
             desc: "Hey, I'm looking for other looking to uber to the airport on Saturday. My flight is in the after noon, so we looking to leave around 11. HMU!",
             tags: ["Transport", "Airport"],
-            datetime: ""
+            datetime: "2020-02-06T22:45:28Z"
         },
         {
             id: "post-3",
@@ -64,7 +64,7 @@ export default {
             title: "Large Boxes Needed",
             desc: "I'm wondering if anyone has any spare large sized boxes on lower campus that I could use. Need to pack up my dorm and don't have time to go out and buy them with finals. Thanks a bunch!",
             tags: ["Boxes", "Lower"],
-            datetime: ""
+            datetime: "2020-02-06T22:45:28Z"
         },
         {
             id: "post-4",
@@ -74,7 +74,7 @@ export default {
             title: "Food and Support if you need it!",
             desc: "I've got a place off campus and am here for anyone that needs help. I'm a decent cook so I can whipe up a little something and am open to talk and provide support in this stressful time!",
             tags: ["Food", "Mental Helath Support", "Off-Campus"],
-            datetime: ""
+            datetime: "2020-02-06T22:45:28Z"
         },
         {
             id: "post-5",
@@ -84,7 +84,7 @@ export default {
             title: "Meal Swipes at Lower",
             desc: "My meal plan still have $500 left on, and I'd hate for it to go to waste! Willing to swipe for anyone's dinner from Tuesday to Thursday if you give me a heads up as a response to this post! Don't be shy!",
             tags: ["Food", "Lower"],
-            datetime: ""
+            datetime: "2020-02-06T22:45:28Z"
         },
     ],
     likes:[

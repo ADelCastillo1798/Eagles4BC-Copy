@@ -1,6 +1,7 @@
 import React from 'react';
 import css from 'components/ProfilePost.module.css';
 import publicUrl from 'utils/publicUrl';
+import timespan from 'utils/timespan.js';
 
 
 function ProfilePost(props){
@@ -17,6 +18,11 @@ function ProfilePost(props){
                     <span>{tag}</span>
                 )}
             </section>
+            <div>
+                <time className={css.time}>
+                    {timespan(props.post.datetime).toUpperCase()} AGO
+                </time>
+            </div>
         </article>
     );
 }

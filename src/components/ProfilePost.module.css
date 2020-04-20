@@ -7,6 +7,8 @@
     width: auto;
     height: auto;
     margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
 }
 .post:last-child{
     margin-bottom: 60px;
@@ -27,4 +29,9 @@
     background-color: gold;
     border-radius: 15px;
     padding: 4px;
+}
+.time{
+    align-self: flex-end;
+    font-size: .1em;
+    color: #840315;
 }
