@@ -22,7 +22,7 @@ function Home(){
                 {allPosts.sort((a,b)=>new Date(b.datetime) - new Date(a.datetime))
                 .filter(p => p.type === filter)
                 .map(post =>
-                <Post key={post.id} post={post}/>)}
+                <Post key={post.id} post={post} currentUserId={store.currentUserId}/>)}
             </div>
         </div>
     );

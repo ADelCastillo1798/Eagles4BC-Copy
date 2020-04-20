@@ -44,3 +44,12 @@
     font-size: .1em;
     color: #840315;
 }
+.respondButton button{
+    height: auto;
+    width: 100%;
+    font-size: medium;
+    margin: auto;
+    background: #840315;
+    border-radius: 5px;
+    color: white;
+}

@@ -6,6 +6,10 @@
     width: auto;
     margin: 50px 20px 0px;
 }
+.main > div{
+    margin-bottom: 8px;
+}
+.main > div 
 .header{
     display: flex;
     justify-content: center;
@@ -17,7 +21,7 @@
     font-size: large;
     width:100%;
     box-sizing: border-box;
-    padding:16px;
+    padding: 0px 0px 8px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -38,7 +42,6 @@
     border-radius: 5px;
     font-size: 2em;
 }
-
 .tags{
     width: 100%;
 }
