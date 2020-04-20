@@ -86,27 +86,5 @@ export default {
             tags: ["Food", "Lower"],
             datetime: "2020-02-06T22:45:28Z"
         },
-    ],
-    likes:[
-        {
-            userId:"baldwin",
-            postId:"post-1",
-            datetime:""
-        },
-        {
-            userId:"baldwin",
-            postId:"post-2",
-            datetime:"2020-02-09T22:51:40Z"
-        },
-        {
-            userId:"iggy",
-            postId:"post-2",
-            datetime:"2020-02-09T22:54:20Z"
-        },
-        {
-            userId:"adam",
-            postId:"post-3",
-            datetime:"2020-02-09T22:53:40Z"
-        }
     ]
 }
