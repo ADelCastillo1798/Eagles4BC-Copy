@@ -24,13 +24,13 @@ export default {
         },
         {
             id: "tommy",
-            email: "suhtommy@bc.edu",
+            email: "suhto@bc.edu",
             photo: "/assets/user4.png",
             name: "Tommy Suh"
         },
         {
             id: "esther",
-            email: "leeesther@bc.edu",
+            email: "leedfy@bc.edu",
             photo: "/assets/user5.png",
             name: "Esther Lee"
         }
