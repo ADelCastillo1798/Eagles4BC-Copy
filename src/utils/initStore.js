@@ -18,8 +18,9 @@ export default {
         {
             id: "adam",
             email: "delcasad@bc.edu",
-            photo: "/assets/user23.png",
-            name: "Adam Del Castillo"
+            photo: "/assets/user3.png",
+            name: "Adam Del Castillo",
+            bio: "Lookign to help in anyway I can #AllInThisTogether"
         },
         {
             id: "tommy",
