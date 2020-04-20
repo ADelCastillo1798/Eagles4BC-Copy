@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: auto;
+    margin: 50px 20px 0px;
 }
 .header{
     display: flex;
@@ -12,10 +13,36 @@
     color: #840315;
     margin-bottom: 10px;
 }
+.type{
+    font-size: large;
+    width:100%;
+    box-sizing: border-box;
+    padding:16px;
+    display: flex;
+    justify-content: space-evenly;
+}
 .title{
     width: 100%;
 }
 .title textarea{
+    box-sizing: border-box;
+    width:100%;
+    height: 50px;
+    background: none;
+    border: 2px solid #840315;
+    outline: none;
+    font:inherit;
+    padding: 0px 5px;
+    resize: none;
+    margin: 0px 5px;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.tags{
+    width: 100%;
+}
+.tags textarea{
     box-sizing: border-box;
     width:100%;
     height: 30px;
@@ -27,8 +54,9 @@
     resize: none;
     margin: 0px 5px;
     border-radius: 5px;
-    font-size: larger;
+    font-size: large;
 }
+
 
 .desc {
     width: 100%;
@@ -44,10 +72,18 @@
     resize: none;
     margin: 0px 5px;
     border-radius: 5px;
+    font-size: large;
 }
-button{
+.actions{
+    width:100%;
+    box-sizing: border-box;
+    padding:16px;
+    display: flex;
+    justify-content: space-between;
+}
+.actions button{
     height: auto;
-    width:50%;
+    width:25%;
     font-size: medium;
     margin: auto;
     text-transform: uppercase;

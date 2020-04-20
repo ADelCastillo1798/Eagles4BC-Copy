@@ -14,21 +14,17 @@ function NewPost(){
 
     function handleTitleChange(e){
         setTitle(e.target.value);
-        console.log(title);
     }
     function handleTypeChange(e){
         setType(e.target.value);
-        console.log(type);
     }
     function handleTagsChange(e){
         let tagString = e.target.value;
         let tagSplit = tagString.split(", ");
         setTags(tagSplit);
-        console.log(tags)
     }
     function handleDescChange(e){
         setDesc(e.target.value);
-        console.log(desc);
     }
     function handleSubmit(e){
         e.preventDefault();
@@ -59,9 +55,6 @@ function NewPost(){
             <div className={css.header}>
                 <span>Create New</span>
             </div>
-            <div className={css.title}>
-                <textarea placeholder="Title…" value={title} row="1" onChange={handleTitleChange}/>
-            </div>
             <div className={css.type}>
                 <label>
                     <input type="radio" value="need" checked={type === "need"} onChange={handleTypeChange} /> Need
@@ -70,8 +63,12 @@ function NewPost(){
                     <input type="radio" value="offer" checked={type === "offer"} onChange={handleTypeChange} /> Offer
                 </label>
             </div>
+            <div className={css.title}>
+                <textarea placeholder="Title…" value={title} row="1" onChange={handleTitleChange}/>
+            </div>
+            
             <div className={css.tags}>
-                <textarea placeholder="Enter tags separated by ,'s" onChange={handleDescChange} />
+                <textarea placeholder="Enter tags separated by ,'s" onChange={handleTagsChange} />
             </div>
             <div className={css.desc}>
                 <textarea placeholder="Describe your post…" rows="10" onChange={handleDescChange} />
