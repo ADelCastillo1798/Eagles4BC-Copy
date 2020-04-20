@@ -38,7 +38,7 @@ function Profile(){
       </div>
       <div className={css.posts}>
         {userPosts.filter(p => p.type === filter).map(post =>
-          <ProfilePost key={post.id} post={post}/>)}
+          <ProfilePost key={post.id} post={post} currentUserId={store.currentUserId} />)}
       </div>
     </div>
   );

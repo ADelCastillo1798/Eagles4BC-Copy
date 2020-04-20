@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 import timespan from 'utils/timespan.js';
 
 function Post(props){
-    let currentUserId = props.currentUserId
-
-    let [repsonse, setResponse] = useState();
+    let currentUserId = props.currentUserId;
 
     return (
         <article className={css.post}>
