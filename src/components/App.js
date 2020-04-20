@@ -7,6 +7,7 @@ import NewPost from 'components/NewPost';
 import Profile from 'components/Profile';
 import Post from 'components/Post';
 import Home from 'components/Home';
+import PostDetails from 'components/PostDetails';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,9 @@ function App() {
           <Header />
           <main className={css.contents}>
             <Switch>
+            <Route path='/PostDetails'>
+                <PostDetails />
+              </Route>
               <Route path='/responses'>
                 <Responses />
               </Route>

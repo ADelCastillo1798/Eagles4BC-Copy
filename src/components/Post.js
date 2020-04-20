@@ -21,7 +21,13 @@ function Post(props){
                         {props.post.title}
                     </header>
                     <section className={css.desc}>
-                        {props.post.desc}
+                        <Link 
+
+                            to={{
+                                pathname: `/PostDetails/${props.post.id}`,
+                            }}>
+                                <div>{props.post.desc}</div>
+                        </Link> 
                     </section>
                 </div>
             </div>
