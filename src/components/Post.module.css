@@ -14,6 +14,7 @@
 }
 .author {
     font-weight: 500;
+    margin-right: 5px;
 }
 .author img{
     border: 1px solid #840315;
