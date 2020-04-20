@@ -2,11 +2,29 @@
     border-radius: 25px;
     border: 2px solid #840315;
     padding: 20px;
-    width: auto;
-    height: 100px;
-    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    height: auto;
+    margin: 5px 20px;
+}
+.post:last-child{
+    margin-bottom: 60px;
 }
 .title{
     font-size: large;
     font-weight: 600;
+    margin-bottom: 3px;
+}
+.desc{
+    padding: 8px;
+    border: 2px solid gold;
+    border-radius: 25px
+}
+.tags span{
+    margin: 5px;
+    display: inline-block;
+    background-color: gold;
+    border-radius: 15px;
+    padding: 4px;
 }

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import publicUrl from 'utils/publicUrl'
-import { StoreContext } from 'contexts/StoreContexts';
+import { StoreContext } from 'contexts/StoreContext';
 import { Link, useParams } from 'react-router-dom';
 import css from 'components/Profile.module.css';
 import ProfilePost from 'components/ProfilePost';

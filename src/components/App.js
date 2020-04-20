@@ -12,7 +12,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import ContextStoreProvider from 'contexts/StoreContexts'
+import ContextStoreProvider from 'contexts/StoreContext'
 
 function App() {
   return (
