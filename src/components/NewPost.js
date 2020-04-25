@@ -53,7 +53,7 @@ function NewPost(){
     return(
         <div className={css.main}>
             <div className={css.header}>
-                <span>Create New</span>
+                <span>Create New Post</span>
             </div>
             <div className={css.type}>
                 <label>

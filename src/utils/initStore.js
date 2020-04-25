@@ -1,5 +1,5 @@
 export default {
-    currentUserId: "baldwin",
+    currentUserId: "tommy",
     users: [
         {
             id: "baldwin",

@@ -15,9 +15,6 @@
     background-color: #c4b263;
     z-index: 1;
 }
-.navItem{
-    font-size: 30px;
-}
-.navItem span {
-    text-decoration: none;
+.navItem svg {
+    color: #840315;
 }
