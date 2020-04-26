@@ -2,7 +2,9 @@ import React from 'react';
 
 function Responses() {
     return(
-        Responses
+        <div>
+            Responses
+        </div>
     );
 }
 

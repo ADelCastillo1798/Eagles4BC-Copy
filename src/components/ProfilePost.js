@@ -21,7 +21,7 @@ function ProfilePost(props){
                 )}
             </section>
             <div className={css.respondButton}>
-                {props.post.userId != currentUserId ? 
+                {props.post.userId !== currentUserId ? 
                     <div>
                         <Link to={`/responses/${props.post.userId}`}>
                                 <button>
@@ -31,11 +31,9 @@ function ProfilePost(props){
                     </div> : null
                 }
             </div>
-            <div>
-                <time className={css.time}>
-                    {timespan(props.post.datetime).toUpperCase()} AGO
-                </time>
-            </div>
+            <time className={css.time}>
+                {timespan(props.post.datetime).toUpperCase()} AGO
+            </time>
         </article>
     );
 }
