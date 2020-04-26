@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import css from 'components/Post.module.css';
 import publicUrl from 'utils/publicUrl';
 import { Link } from 'react-router-dom';
@@ -39,7 +39,7 @@ function Post(props){
                 </section>
             </div>
             <div className={css.respondButton}>
-                {props.post.userId != currentUserId ? 
+                {props.post.userId !== currentUserId ? 
                     <div>
                         <Link to={`/responses/${props.post.id}`}>
                                 <button>

@@ -21,7 +21,7 @@ function ProfilePost(props){
                 )}
             </section>
             <div className={css.respondButton}>
-                {props.post.userId != currentUserId ? 
+                {props.post.userId !== currentUserId ? 
                     <div>
                         <Link to={`/responses/${props.post.userId}`}>
                                 <button>

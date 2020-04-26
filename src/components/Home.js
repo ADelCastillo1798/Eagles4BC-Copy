@@ -1,7 +1,6 @@
 import React , { useContext, useState } from 'react';
 import { StoreContext } from 'contexts/StoreContext';
 import Post from 'components/Post';
-import publicUrl from 'utils/publicUrl';
 import css from 'components/Home.module.css';
 
 

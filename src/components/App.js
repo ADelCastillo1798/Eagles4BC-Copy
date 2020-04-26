@@ -5,15 +5,17 @@ import Navbar from 'components/Navbar';
 import Responses from 'components/Responses';
 import NewPost from 'components/NewPost';
 import Profile from 'components/Profile';
-import Post from 'components/Post';
+import SignIn from 'components/SignIn';
 import Home from 'components/Home';
+import Landing from 'components/Landing';
 import PostDetails from 'components/PostDetails';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 import ContextStoreProvider from 'contexts/StoreContext'
+
 
 function App() {
   return (
@@ -35,12 +37,18 @@ function App() {
               <Route path='/profile/:userId?'>
                 <Profile />
               </Route>
-              <Route path='/'>
+              <Route path='/home'>
                 <Home />
+              </Route>
+              <Route path='/signIn'>
+                <SignIn />
+              </Route>
+              <Route path='/'>
+                <Landing />
               </Route>
             </Switch>
           </main>
-          <Navbar />
+          <Navbar/>
         </div>
       </ContextStoreProvider>
     </Router>
