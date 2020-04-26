@@ -31,11 +31,9 @@ function ProfilePost(props){
                     </div> : null
                 }
             </div>
-            <div>
-                <time className={css.time}>
-                    {timespan(props.post.datetime).toUpperCase()} AGO
-                </time>
-            </div>
+            <time className={css.time}>
+                {timespan(props.post.datetime).toUpperCase()} AGO
+            </time>
         </article>
     );
 }

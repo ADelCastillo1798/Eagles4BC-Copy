@@ -7,10 +7,8 @@ import { useParams, useLocation } from 'react-router-dom';
 
 function PostDetails() {
     let location = useLocation();
-    console.log(location);
     var stringURL = location.pathname;
     var postId = stringURL.replace("/PostDetails/post-", "");
-    console.log(postId);
     const store = useContext(StoreContext);
     let {userId} = useParams();
     

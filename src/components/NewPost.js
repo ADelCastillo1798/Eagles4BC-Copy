@@ -44,7 +44,7 @@ function NewPost(){
     
         //update store
         addPost(title, type, desc, tags);
-        history.push('/');
+        history.push('/home');
       }
     function handleCancel(){
         history.goBack();
@@ -64,14 +64,14 @@ function NewPost(){
                 </label>
             </div>
             <div className={css.title}>
-                <textarea placeholder="Title…" value={title} row="1" onChange={handleTitleChange}/>
+                <textarea placeholder="Title for your post…" value={title} row="1" onChange={handleTitleChange}/>
             </div>
             
             <div className={css.tags}>
                 <textarea placeholder="Enter tags separated by ,'s" onChange={handleTagsChange} />
             </div>
             <div className={css.desc}>
-                <textarea placeholder="Describe your post…" rows="10" onChange={handleDescChange} />
+                <textarea placeholder="Describe your post! Provide details on your need or offer :)" rows="10" onChange={handleDescChange} />
             </div>
            
             <div className={css.actions}>
