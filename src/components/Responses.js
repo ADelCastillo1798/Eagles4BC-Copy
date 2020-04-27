@@ -22,7 +22,7 @@ chatClient.setUser(
   userToken,
 );
 
-const channel = chatClient.channel('messaging', 'BCApp2', {
+const channel = chatClient.channel('messaging', 'BCApp3', {
   // add as many custom fields as you'd like
   image: 'https://getstream.io/random_svg/?id=odd-disk-9&name=Odd+disk',
   name: 'Reply to Post',
