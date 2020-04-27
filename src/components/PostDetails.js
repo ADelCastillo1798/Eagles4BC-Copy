@@ -6,25 +6,19 @@ import { useParams, useLocation } from 'react-router-dom';
 
 
 function PostDetails() {
-    let location = useLocation();
-    var stringURL = location.pathname;
-    var postId = stringURL.replace("/PostDetails/post-", "");
+
+    const params = useParams();
+    const postId = params.postId
     const store = useContext(StoreContext);
-    let {userId} = useParams();
-    
-    
-    if (!userId){
-        userId = store.currentUserId;
-    }
-    let post = store.posts[postId-1];
-    //   let user = store.users.find(u => u.id === userId);
+    const filtered = store.posts.filter(post => post.id === postId)
+    const post = filtered[0]
 
     return(
         <div>
             <header className={css.header}>
-            <div>
-                {post.desc}
-            </div>
+                <div>
+                    {post.desc}
+                </div>
             </header>
         </div>
          

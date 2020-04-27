@@ -25,7 +25,7 @@ function App() {
           <Header />
           <main className={css.contents}>
             <Switch>
-            <Route path='/PostDetails'>
+            <Route path='/PostDetails/:postId?'>
                 <PostDetails />
               </Route>
               <Route path='/responses'>
