@@ -7,7 +7,7 @@ function Navbar() {
     
     let location = useLocation();
     console.log(location)
-    let hideNav = (location.pathname === '/') || (location.pathname === '/signIn')
+    let hideNav = (location.pathname === '/creative-project-adam-esther-tommy') || (location.pathname === '/signIn')
     console.log(hideNav)
     
     return (
